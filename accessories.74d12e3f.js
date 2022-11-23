@@ -1,2 +1,2 @@
 (()=>{const e={openMenuBtn:document.querySelector("[data-menu-open]"),closeMenuBtn:document.querySelector("[data-menu-close]"),menu:document.querySelector("[data-menu]"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})();new Swiper(".mySwiper",{pagination:{el:".swiper-pagination"}});
-//# sourceMappingURL=index.46f41464.js.map
+//# sourceMappingURL=accessories.74d12e3f.js.map
