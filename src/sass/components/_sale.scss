@@ -41,6 +41,49 @@
   @include tablet {
     display: flex;
   }
+  @include desktop {
+    display: none;
+  }
+}
+
+.sale-item {
+  @include desktop {
+    display: none;
+  }
+}
+
+.sale-item.sale-item-first {
+  @include desktop {
+    display: flex;
+  }
+}
+
+.sale-item.sale-item-second {
+  @include desktop {
+    display: flex;
+    order: 1;
+  }
+}
+
+.sale-item.sale-item-third {
+  @include desktop {
+    display: flex;
+    order: 2;
+  }
+}
+
+.sale-item.sale-item-fourth {
+  @include desktop {
+    display: flex;
+    order: 3;
+  }
+}
+
+.sale-item.sale-item-five {
+  @include desktop {
+    display: flex;
+    order: 4;
+  }
 }
 
 .sale-item:not(:last-child) {
@@ -50,12 +93,6 @@
 .sale-item {
   @include tablet {
     width: 285px;
-  }
-}
-
-.sale-item:nth-child(n + 2):nth-child(-n + 4) {
-  @include desktop {
-    display: flex;
   }
 }
 
