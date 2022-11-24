@@ -40,6 +40,7 @@ footer {
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--white-color-text);
+
   transition: background-color var(--transit-duration) var(--transit-timing);
 
   @media screen and (max-width: 767px) {
@@ -78,9 +79,10 @@ footer {
 }
 
 .menu-nav .link {
+  position: relative;
+
   display: inline-block;
   padding-bottom: 7px;
-  position: relative;
 }
 
 .menu-nav .link::before {
@@ -88,14 +90,17 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
+
   // width: 0%;
   width: 100%;
   opacity: 0;
   height: 1px;
+
   background-color: var(--light-green-color);
 }
 
-.menu-nav .link:hover::before {
+.menu-nav .link:hover::before,
+.menu-nav .link:focus::before {
   opacity: 1;
   // / width: 100%;
   transition: opacity var(--transit-duration) var(--transit-timing);
@@ -138,10 +143,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 24px;
   height: 24px;
-  border-radius: 50%;
 
+  border-radius: 50%;
   fill: #001414;
   background-color: var(--white-color-text);
   transition: background-color var(--transit-duration) var(--transit-timing);
@@ -176,6 +182,7 @@ footer {
   line-height: 1.19;
   letter-spacing: 0.01em;
   color: var(--grey-color);
+
   transition: background-color var(--transit-duration) var(--transit-timing);
 }
 
